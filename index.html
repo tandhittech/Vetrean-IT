@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VET IT Services</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <canvas id="matrix"></canvas>
+
+  <header class="hero" id="top">
+    <div class="hero-media">
+      <img class="hero-image" src="header.jpg" alt="VET IT Services header image">
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="badge">Veteran-Owned • Local • Professional</div>
+      <h1>VET IT Services</h1>
+      <p class="tagline">
+        Security cameras, Wi-Fi, and device protection — clean work, clear communication, no headaches.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#contact">Email Us</a>
+        <a class="btn btn-ghost" href="#questions">Ask a Question</a>
+      </div>
+
+      <div class="micro">
+        Response time: within 24 hours • Serving homes & small businesses
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="rates">
+      <div class="section-head">
+        <h2>Service Rates</h2>
+        <p class="subtext">Transparent pricing. Efficient work.</p>
+      </div>
+
+      <div class="cards two">
+        <div class="card">
+          <h3>$120</h3>
+          <p class="muted">Minimum service call</p>
+          <p>On-site visit + initial assessment.</p>
+        </div>
+
+        <div class="card">
+          <h3>$60/hr</h3>
+          <p class="muted">After the first hour</p>
+          <p>Focused, efficient troubleshooting and installs.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="section-head">
+        <h2>Services</h2>
+        <p class="subtext">Home, landlord, and small business security + IT support.</p>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <h3>🔒 Physical Security Services</h3>
+          <ul>
+            <li>Security camera installation (wired & wireless)</li>
+            <li>Video doorbell installation</li>
+            <li>NVR / DVR setup and configuration</li>
+            <li>Remote viewing setup (phone & tablet access)</li>
+            <li>Small business surveillance systems</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>🌐 Network & Internet Security</h3>
+          <ul>
+            <li>Wi-Fi setup, optimization, and coverage improvement</li>
+            <li>Router and firewall configuration</li>
+            <li>Network segmentation (guest vs private networks)</li>
+            <li>VPN setup for homes and small businesses</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>💻 Computer & Device Security</h3>
+          <ul>
+            <li>Malware and virus removal</li>
+            <li>Device hardening for PC & Mac</li>
+            <li>Backup setup (local and cloud solutions)</li>
+            <li>Password manager setup and training</li>
+            <li>New device setup for families and small offices</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>🔁 Ongoing Tech Support (Recurring Service)</h3>
+          <ul>
+            <li>Monthly system monitoring and maintenance</li>
+            <li>Camera system health checks</li>
+            <li>Network and security updates</li>
+            <li>On-call technical support</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="section-head">
+        <h2>Before & After Work</h2>
+        <p class="subtext">Real installations. Clean results.</p>
+      </div>
+
+      <div class="gallery">
+        <figure class="shot">
+          <img src="before1.jpg" alt="Before work photo">
+          <figcaption>Before</figcaption>
+        </figure>
+
+        <figure class="shot">
+          <img src="after1.jpg" alt="After work photo">
+          <figcaption>After</figcaption>
+        </figure>
+      </div>
+
+      <p class="muted center small">
+        Add more photos by uploading <code>before2.jpg</code>, <code>after2.jpg</code>, etc., then copy one of the blocks above.
+      </p>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="section-head">
+        <h2>Email</h2>
+        <p class="subtext">Click to open Gmail with a pre-filled message.</p>
+      </div>
+
+      <div class="card">
+        <p class="muted">Business Email</p>
+        <p class="email-big">T.and.H.IT.Tech@gmail.com</p>
+
+        <div class="row">
+          <button class="btn btn-primary" id="gmailEmailBtn">Open Gmail Email</button>
+          <button class="btn btn-ghost" id="gmailQuoteBtn">Request a Quote</button>
+        </div>
+
+        <p class="muted small">
+          These buttons open Gmail in your browser (no phone number needed).
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="questions">
+      <div class="section-head">
+        <h2>Questions & Q&A</h2>
+        <p class="subtext">Send a question — it opens Gmail with your message ready to send.</p>
+      </div>
+
+      <div class="card">
+        <form id="questionForm">
+          <label>
+            Your name
+            <input type="text" id="qName" placeholder="Name" required />
+          </label>
+
+          <label>
+            Your email (optional)
+            <input type="email" id="qEmail" placeholder="you@email.com" />
+          </label>
+
+          <label>
+            Your question
+            <textarea id="qMessage" placeholder="Type your question here..." required></textarea>
+          </label>
+
+          <div class="row">
+            <button type="submit" class="btn btn-primary">Send Question via Gmail</button>
+            <a class="btn btn-ghost" href="#top">Back to Top</a>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>© <span id="year"></span> VET IT Services</div>
+    <div class="muted small">Professional. Clean installs. Clear communication.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
