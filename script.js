@@ -70,7 +70,7 @@ resize();
 window.addEventListener("resize", resize);
 
 const chars = "01ABCDEFGHIJKLMNOPQRSTUVWXYZ#$%&@";
-const fontSize = 14;
+const fontSize = 16;
 
 let columns = Math.floor(canvas.width / fontSize);
 let drops = Array.from({ length: columns }, () => Math.random() * (canvas.height / fontSize));
@@ -83,12 +83,11 @@ window.addEventListener("resize", rebuildDrops);
 
 function draw() {
   // fade trail (matches light grey background)
-  ctx.fillStyle = "rgba(242, 244, 247, 0.08)";
+ ctx.fillStyle = "rgba(242, 244, 247, 0.05)";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
   ctx.font = `${fontSize}px monospace`;
-  ctx.fillStyle = "rgba(37, 99, 235, 0.55)"; // subtle blue
-
+ ctx.fillStyle = "rgba(37, 99, 235, 0.75)";
   for (let i = 0; i < drops.length; i++) {
     const text = chars.charAt(Math.floor(Math.random() * chars.length));
     ctx.fillText(text, i * fontSize, drops[i] * fontSize);
