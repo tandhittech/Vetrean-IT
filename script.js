@@ -99,6 +99,6 @@ function draw() {
 
   }
 
-  requestAnimationFrame(draw);
+ setTimeout(() => requestAnimationFrame(draw), 40);
 }
 draw();
