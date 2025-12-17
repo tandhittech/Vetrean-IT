@@ -95,7 +95,7 @@ function draw() {
     if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
       drops[i] = 0;
     }
-  drops[i] += 0.25;
+  drops[i] += 0.35;
 
   }
 
